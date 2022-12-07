@@ -13,12 +13,12 @@ import java.util.HashSet;
 
 public class Graph {
     //key 城市编号 value 城市对应的结点
-    public HashMap<Integer, Node> nodes;
+    public HashMap<String, Node> nodes;
     //边集合
     public HashSet<Edge> edges;
 
     public Graph() {
-        nodes = new HashMap<Integer, Node>();
+        nodes = new HashMap<String , Node>();
         edges = new HashSet<Edge>();
     }
 }
