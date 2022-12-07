@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94a76d43-6aae-4bdd-8933-00b31b081a27" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/图算法/CourseArrangement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/图算法/TopologicalSorting.java" afterDir="false" />
+    <list default="true" id="94a76d43-6aae-4bdd-8933-00b31b081a27" name="默认变更列表" comment="提交拓扑排序">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/图算法/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/图算法/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/图算法/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/图算法/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/图算法/TopologicalSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/图算法/TopologicalSorting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/图算法/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/图算法/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,8 +85,16 @@
       <option name="presentableId" value="Default" />
       <updated>1670336375111</updated>
       <workItem from="1670336377561" duration="9909000" />
-      <workItem from="1670381810945" duration="10906000" />
+      <workItem from="1670381810945" duration="14110000" />
     </task>
+    <task id="LOCAL-00001" summary="提交拓扑排序">
+      <created>1670396800641</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670396800641</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,5 +111,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交拓扑排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交拓扑排序" />
   </component>
 </project>
