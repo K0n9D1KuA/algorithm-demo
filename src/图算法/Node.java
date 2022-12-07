@@ -23,6 +23,8 @@ public class Node {
     public ArrayList<Node> nexts;
     public ArrayList<Edge> edges;
 
+
+
     public Node(String value, Integer credit) {
         this.value = value;
         this.in = 0;
