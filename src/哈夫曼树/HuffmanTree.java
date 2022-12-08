@@ -100,7 +100,7 @@ public class HuffmanTree {
 
     /*
      * @author: K0n9D1KuA
-     * @description: 打印哈夫曼树编码
+     * @description: 打印哈夫曼树编码 格式：  原字符:xx 编码:xxxx
      * @param: huffmanTree 哈夫曼树所有结点
      * @param: countOfLeaveNode 哈夫曼树叶子结点数量
      * @param: code 哈夫曼树编码
@@ -162,51 +162,82 @@ public class HuffmanTree {
         return twoMinRoot;
     }
 
+    /*
+     * @author: K0n9D1KuA
+     * @description:
+     * @param:
+     * @param: originalString 需要编码的字符串
+     * @param: chars 字符集 通过每个字符在字符集中的位置
+     * 可以在codes中锁定该字符的编码
+     * @param: codes 编码集 通过每个字符在字符集中的位置
+     * 可以在codes中锁定该字符的编码
+     * @return:
+     * @date: 2022/12/8 0:44
+     */
     public static void encodingByOneString(String originalString, char[] chars, List<String> codes) {
-        StringBuilder stringBuilder = new StringBuilder();
-        String s = new String(chars);
+
+
+        //结果编码
+        StringBuilder resultCode = new StringBuilder();
+        //将字母集转化为String类型
+        //目的是为了查找originalString每一个字符在
+        //char[] chars中的位置
+        String charString = new String(chars);
         //遍历字符串
-        char[] chars1 = originalString.toCharArray();
-        for (char c : chars1
-        ) {
-            int i = s.indexOf(c);
-            stringBuilder.append(codes.get(i));
+        for (int i = 0; i < originalString.length(); i++) {
+            //获得下标
+            int index = charString.indexOf(originalString.charAt(i));
+            //拼接
+            resultCode.append(codes.get(index));
         }
-        System.out.println(stringBuilder.toString());
+        //打印编码
+        System.out.println(originalString + " 编码后的结果-》" + resultCode.toString());
     }
 
-    public static void decoding(String codes, List<TreeNode> huffmanTree) {
-        //从根节点开始走
-        int indexOfRoot = huffmanTree.size() - 1;
+    /*
+     * @author: K0n9D1KuA
+     * @description: 将编码转化成代表的字符串
+     * @param: codes 需要翻译的编码
+     * @param: huffmanTreeAllNodes 哈夫曼树所有结点
+     * @return:
+     * @date: 2022/12/8 0:36
+     */
+    public static void decoding(String codes, List<TreeNode> huffmanTreeAllNodes) {
+        //根结点的下标
+        int indexOfRoot = huffmanTreeAllNodes.size() - 1;
         //获得编码的长度
         int length = codes.length();
-        StringBuilder stringBuilder = new StringBuilder();
+        //译码结果
+        StringBuilder decodingResult = new StringBuilder();
+        //当前遍历到的结点
+        TreeNode curNode = huffmanTreeAllNodes.get(indexOfRoot);
         int i = 0;
-        TreeNode curNode = huffmanTree.get(indexOfRoot);
         while (i < length) {
 
             if (codes.charAt(i) == '0') {
                 //走左子树
-                curNode = huffmanTree.get(curNode.getlChild());
+                curNode = huffmanTreeAllNodes.get(curNode.getlChild());
                 //如果走到了叶子结点
                 if (curNode.getlChild() == 0 && curNode.getrChild() == 0) {
-                    stringBuilder.append(curNode.getCharacter());
+                    //拼接字符
+                    decodingResult.append(curNode.getCharacter());
                     //重新从根开始走
-                    curNode = huffmanTree.get(indexOfRoot);
+                    curNode = huffmanTreeAllNodes.get(indexOfRoot);
                 }
             } else {
                 //走右子树
-                curNode = huffmanTree.get(curNode.getrChild());
+                curNode = huffmanTreeAllNodes.get(curNode.getrChild());
                 //如果走到了叶子结点
                 if (curNode.getlChild() == 0 && curNode.getrChild() == 0) {
-                    stringBuilder.append(curNode.getCharacter());
+                    //拼接字符
+                    decodingResult.append(curNode.getCharacter());
                     //重新从根开始走
-                    curNode = huffmanTree.get(indexOfRoot);
+                    curNode = huffmanTreeAllNodes.get(indexOfRoot);
                 }
             }
             i++;
         }
         //最后打印结果
-        System.out.println(stringBuilder.toString());
+        System.out.println(codes + " 译码结果是-》" + decodingResult.toString());
     }
 }
