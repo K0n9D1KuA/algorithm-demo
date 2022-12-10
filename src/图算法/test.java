@@ -27,7 +27,7 @@ public class test {
     }
 
     public static void courseArrange() {
-        Integer arrangeCourseStrategy = 0;
+        Integer arrangeCourseStrategy = 1;
         List<List<Node>> result = CourseArrangement.arrangeCourse(6, 10, arrangeCourseStrategy);
         if (arrangeCourseStrategy == 1) {
             System.out.println("各学期的课程尽量均匀==================");

@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94a76d43-6aae-4bdd-8933-00b31b081a27" name="默认变更列表" comment="哈夫曼树">
+      <change afterPath="$PROJECT_DIR$/src/停车场管理/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/停车场管理/Park.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/停车场管理/WaitQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/停车场管理/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/环形数组模拟队列/ClassArrayQueueDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/环形数组模拟队列/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/哈夫曼树/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/哈夫曼树/HuffmanTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/哈夫曼树/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/哈夫曼树/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/图算法/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/图算法/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +46,58 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="应用程序.Test">
+  <component name="RunManager" selected="应用程序.test (1)">
+    <configuration name="ClassArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="环形数组模拟队列.ClassArrayQueueDemo" />
+      <module name="algorithm-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="环形数组模拟队列.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="环形数组模拟队列.Test" />
+      <module name="algorithm-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="环形数组模拟队列.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="哈夫曼树.Test" />
       <module name="algorithm-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="哈夫曼树.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="停车场管理.test" />
+      <module name="algorithm-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="停车场管理.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,8 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.test (1)" />
         <item itemvalue="应用程序.Test" />
         <item itemvalue="应用程序.test" />
+        <item itemvalue="应用程序.ClassArrayQueueDemo" />
+        <item itemvalue="应用程序.Test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -98,6 +149,9 @@
       <updated>1670336375111</updated>
       <workItem from="1670336377561" duration="9909000" />
       <workItem from="1670381810945" duration="23995000" />
+      <workItem from="1670508941910" duration="7506000" />
+      <workItem from="1670551798912" duration="6659000" />
+      <workItem from="1670662518088" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary="提交拓扑排序">
       <created>1670396800641</created>
@@ -127,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670430063945</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="哈夫曼树">
+      <created>1670509121561</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670509121561</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
