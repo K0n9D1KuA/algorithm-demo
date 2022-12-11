@@ -110,7 +110,7 @@ public class QuickSort {
             }
             //----------------------------------------
             //为什么是arr[i] <= partition?
-            //这是为了跳过开头元素 因为开头 partitiion 和 arr[i]指向的是一个元素
+            //这是为了跳过开头元素 因为开头 partition 和 arr[i]指向的是一个元素
             while (i < j && arr[i] <= partition) {
                 i++;
             }
